@@ -6,12 +6,12 @@
 
 /**
  *
- * @author julio
+ * @author Julio Cesar Santaman Cruz.
  */
 public class Estudiante {
     // Atributos.
-    String nombre;
-    double[] calificaciones = new double[5];
+    private String nombre;
+    private double[] calificaciones = new double[5];
     
     // Métodos
     
@@ -76,5 +76,10 @@ public class Estudiante {
         }
         System.out.println("Promedio: " + promedio);
         System.out.println("Calificación: " + calificacionFinal);
+    }
+    
+    // Métodos getters.
+    public String getNombre() {
+        return nombre;
     }
 }
