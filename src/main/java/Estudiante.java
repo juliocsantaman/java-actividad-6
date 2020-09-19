@@ -15,6 +15,12 @@ public class Estudiante {
     
     // Métodos
     
+    // Método constructor.
+    public Estudiante(String nombre, double[] calificaciones) {
+        this.nombre = nombre;
+        this.calificaciones = calificaciones;
+    }
+    
     /*
         Este método va a calcular el promemdio
         de las calificaciones que nos pasen en 
@@ -58,12 +64,17 @@ public class Estudiante {
         return calificacionFinal;
     }
     
-    public void imprimirResultados(String nombre, double promedio, char calificacion) {
+    /*
+        Este método va a imprimir los datos
+        del estudiante, nombre, calificaciones, promedio
+        y calificación final.
+    */
+    public void imprimirResultados(String nombre, double promedio, char calificacionFinal) {
         System.out.println("Nombre del estudiante: " + nombre);
         for(int i = 0; i < calificaciones.length; i++) {
             System.out.println("Calificación " + (i+1) + ": " + calificaciones[i]);
         }
         System.out.println("Promedio: " + promedio);
-        System.out.println("Calificación: " + calificacion);
+        System.out.println("Calificación: " + calificacionFinal);
     }
 }
